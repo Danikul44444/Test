@@ -27,9 +27,9 @@ while checker_oper:
 operation_num = int(oper)
 
 if operation_num == 1:
-    pass
+    print(f'{num1} + {num2} = {num1 + num2}')
 elif operation_num == 2:
-    pass
+    print(f'{num1} - {num2} = {num1 - num2}')
 elif operation_num == 3:
     print(f'{num1} * {num2} = {num1 * num2}')
 elif operation_num == 4:
