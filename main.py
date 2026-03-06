@@ -1,12 +1,30 @@
-num1 = int(input(">> "))
-num2 = int(input(">> "))
+def is_num(x: str) -> bool:
+    try:
+        int(x)
+        return true
+    except:
+        return false
+
+checker_num = false
+while g:
+    n1 = input(">> ")
+    t = is_num(n1)
+    n2 = input(">> ")
+    t1 = is_num(n2)
+    g = (t and t1)
+
+num1 = int(n1)
+num2 = int(n2)
 
 operation_list = ['+', '-', '*', '/']
-
-print('Choose operation number: ')
-for x in range(len(operation_list)):
-    print(f'{x + 1} - {operation_list[x]}')
-operation_num = int(input(">> "))
+checker_oper = false 
+while checker_oper:
+    print('Choose operation number: ')
+    for x in range(len(operation_list)):
+        print(f'{x + 1} - {operation_list[x]}')
+    oper = input(">> ")
+    checker_oper = is_num(oper)
+operation_num = int(oper)
 
 if operation_num == 1:
     pass
